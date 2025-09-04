@@ -1,74 +1,65 @@
-DashBoard‑Task
+# DashBoard‑Task
 
-An admin dashboard that combines powerful data visualization with intuitive user management. This dashboard features interactive charts showing user growth trends, avatar distribution, and signup time analytics—plus a robust user management panel with CRUD operations, filtering, sorting, and pagination.
+An **admin dashboard** that combines powerful data visualization with intuitive user management.  
+This dashboard features interactive charts showing user growth trends, avatar distribution, and signup time analytics—plus a robust user management panel with CRUD operations, filtering, sorting, and pagination.
 
-Tech Stack
+---
 
-Frontend: React + Vite (or similar modern framework)
+## 🛠 Tech Stack
 
-Styling: Tailwind CSS
+- **Frontend:** React + Vite
+- **Styling:** Tailwind CSS
+- **Charts:** Chart.js / Recharts / ECharts
+- **Data Fetching:** Axios or Fetch API
+- **Mock API:** [MockAPI Endpoint](https://6874ce63dd06792b9c954fc7.mockapi.io/api/v1/users)
 
-Charts: Chart.js / Recharts / ECharts
+---
 
-Data Fetching: Axios or Fetch API
+## 🚀 Features
 
-API Source: MockAPI Users Endpoint
+### 📊 Dashboard Overview
 
-Features
-1. Dashboard Overview
+- **Total Users Tile:** Shows the total number of registered users.
+- **Users Created Per Day:** Line or bar chart using the `createdAt` field.
+- **Avatar Distribution:** Pie chart showing users with and without profile pictures.
+- **Signup Time of Day Distribution (Optional):** Heatmap or pie chart showing most active signup hours.
+- **Recently Joined Users:** List of 5 most recent users with avatars.
 
-Total Users Tile: Shows the total number of registered users.
+### 👥 User Management
 
-Users Created Per Day (Last 30 Days): Visualized via line or bar chart based on createdAt.
+- **User Table:** Displays avatar, name, email, and signup date.
+- **In-Memory Pagination:** 10 users per page.
+- **Sorting & Searching:** Sort by name/date; search by name or email.
+- **User Detail Modal:** Click row to view full user details.
+- **Optional Enhancements:**
+  - Create / Edit User form with live avatar preview.
 
-Avatar Distribution: Pie chart showing users with avatars vs without.
+---
 
-Signup Time of Day Distribution (Optional): Heatmap or pie chart displaying signup hour patterns.
+## 📦 Installation
 
-Recently Joined Users: Horizontal list featuring the 5 newest users with avatar, name, and signup date.
+### 1. Clone the Repository
 
-2. User List Management
-
-User Table: Displays avatar, name, email, and signup date.
-
-In-Memory Pagination: Displays 10 users per page.
-
-Sorting & Searching: Sort by name/date; search by name or email.
-
-Clickable Rows: Opens user details in modal or separate route.
-
-Optional Enhancements:
-
-Create / Edit User functionality (modal forms).
-
-Live avatar preview within forms.
-
-Setup & Usage
-
-Clone the Repo
-
+```bash
 git clone https://github.com/yashhhYB/DashBoard-Task.git
 cd DashBoard-Task
-
-
-Install Dependencies
-
+2. Install Dependencies
+bash
+Copy code
 npm install
 # or
 yarn install
-
-
-Run the App
-
+3. Start Development Server
+bash
+Copy code
 npm run dev
 # or
 yarn dev
+Open http://localhost:5173 in your browser.
 
-
-Access at http://localhost:3000 (default Vite port).
-
-Build for Production
-
+4. Build for Production
+bash
+Copy code
 npm run build
 # or
 yarn build
