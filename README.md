@@ -9,8 +9,8 @@ This dashboard features interactive charts showing user growth trends, avatar di
 
 - **Frontend:** React + Vite
 - **Styling:** Tailwind CSS
-- **Charts:** Chart.js / Recharts / ECharts
-- **Data Fetching:** Axios or Fetch API
+- **Charts:** Chart.js 
+- **Data Fetching:** Fetch API
 - **Mock API:** [MockAPI Endpoint](https://6874ce63dd06792b9c954fc7.mockapi.io/api/v1/users)
 
 ---
